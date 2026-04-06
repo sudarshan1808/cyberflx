@@ -5,7 +5,9 @@
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
     "dev": "concurrently -n server,client -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "build": "npm run build --prefix client",
-    "start": "npm run start --prefix server"
+    "start": "npm run start --prefix server",
+    "render-build": "npm install --prefix server",
+    "render-start": "npm start --prefix server"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"

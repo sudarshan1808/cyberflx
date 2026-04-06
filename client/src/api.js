@@ -1,6 +1,6 @@
 const TOKEN_KEY = "cyberflix_token";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "https://cyberflx-1.onrender.com";
 
 export function getToken() {
   return sessionStorage.getItem(TOKEN_KEY);
